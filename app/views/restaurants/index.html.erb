@@ -1,9 +1,10 @@
-<h1>Here are all our restaurants</h1>
-
-<ul>
-  <% @restaurants.each do |restaurant| %>
-  <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
-  <% end %>
-</ul>
-
-<%= link_to "Add a new restaurant", new_restaurant_path %>
+<div class="w-50 d-flex justify-content-left pt-3">
+  <h1 class="text-secondary pl-3">Here are all our restaurants</h1>
+</div>
+<div class="w-50 d-flex justify-content-left">
+  <ul>
+    <% @restaurants.each do |restaurant| %>
+    <li class="p-2  list-unstyled"><%= link_to restaurant.name, restaurant_path(restaurant), class: "text-decoration-none" %></li>
+    <% end %>
+  </ul>
+</div>
