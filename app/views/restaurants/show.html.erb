@@ -3,3 +3,7 @@
 <p><%= "#{@restaurant.name}" %></p>
 <p><%= "Address: #{@restaurant.address} "%></p>
 <p><%= "#{@restaurant.category.capitalize} food" %></p>
+<p><%= "#{@restaurant.phone_number}" %></p>
+
+<%= link_to "Go back to all restaurant", restaurants_path %>
+<%= link_to "Add a review", new_restaurant_review_path(@restaurant) %>

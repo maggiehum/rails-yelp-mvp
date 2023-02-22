@@ -3,7 +3,7 @@
 <%= simple_form_for (@restaurant) do |f| %>
   <%= f.input :name %>
   <%= f.input :address %>
-  <%= f.input :category %>
+  <%= f.select :category, Restaurant::CATEGORIES %>
   <%= f.input :phone_number %>
   <%= f.submit "Submit new restaurant", class: "btn btn-primary" %>
 <% end %>
